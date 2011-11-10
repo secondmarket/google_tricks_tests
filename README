@@ -1,0 +1,12 @@
+This is an extremely basic example of a Cucumber plus Webdriver test suite.
+
+- It is a completely standalone and fully functionaly test suite
+- It can be integrated into a continuous integration system like Jenkins
+- It can produce human readable HTML reports with screenshots of failures
+
+Many more features can be adding by iterating out on this basic skeleton
+
+To run it:
+- cucumber
+- cucumber -f pretty -f junit -o results
+- cucumber -f pretty -f junit -o results -f html -o report.html
