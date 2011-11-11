@@ -3,7 +3,7 @@ Feature: Google should perform tricks for my amusement
   As a surfer of the internet,
   I demand my browser perform amusing tricks
 
-  Scenario: Search for anagram
+  Scenario: Search for the answer to life the universe and everything
     When I search google for "answer to life the universe and everything"
     Then google should answer it with "42"
 
