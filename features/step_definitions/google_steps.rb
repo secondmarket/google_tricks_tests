@@ -11,11 +11,10 @@ When /^I search google for "([^"]*)"$/ do |search_string|
   suggest_table.wait_while_present
 end
 
-Then /google should .+ "([^"]*)"/ do |suggest_string|
-
-  suggest_el = @browser.div(:id, 'topstuff')
-  suggest_el.wait_until_present
-  suggest_el.text.should include suggest_string
+Then /google should .+ "([^"]*)"/ do |expected_substring|
+  element_we_are_checking = @browser.div(:id, 'topstuff')
+  element_we_are_checking.wait_until_present
+  element_we_are_checking.text.should include expected_substring
 end
 
 Then /^My browser should spin about$/ do
